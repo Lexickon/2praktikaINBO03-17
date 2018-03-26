@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()
+{
+system("color F0");
+float a, b, n, m;
+a = 4.8;
+b = -7.9;
+if (a >= b)
+{
+n = pow((a - b), 1.0 / 3);
+}
+else if (a < b)
+{
+n = pow(a, 2) + ((a - b) / sin(a * b));
+}
+if (n < b)
+{
+m = (n + a) / (-b) + sqrt((pow(sin(a), 2)) - cos(n));
+}
+else if (n == b)
+{
+m = pow(b, 2) + tan(n * a);
+}
+else if (n > b)
+{
+m = pow(b, 3) + n * pow(a, 2);
+}
+cout << "a= " << a << endl << "b= " << b << endl << "n= " << n << endl << "m= " << m << endl;
+return 0;
+}
